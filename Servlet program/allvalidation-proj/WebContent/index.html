@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="submit" method="get">
+
+		<tr>
+		<td>firstname</td>
+		<td><input type="text" name="firstname"></td>
+		</tr><br>
+		
+		<tr>
+		<td>lastname</td>
+		<td><input type="text" name="lastname"></td>
+		</tr><br>
+		
+		<label> Gender</label>
+            <div>
+                <input type="checkbox"name="gender">Male
+                <input type="checkbox"name="gender">FeMale
+            </div>
+            <span id="genderMessage"></span><br>
+            
+             <div class="form-group">
+            <lable for="email">email address:</lable>
+            <input type="email"class="form-control"id="email"name="email">
+            <span id="emailMessage"></span>
+            </div><br>
+            
+            <tr>
+		<td>operaction</td>
+		
+            <td><select id="op" name="op">
+                <option>Select qualification</option>
+                <option>BE</option>
+                <option>ME</option>
+                <option>BSE</option>
+                <option>BCA</option>
+                <option>MCA</option>
+                <option>B.com</option>
+                <option>MBA</option>
+                <option>BA</option>
+               </select>
+            <br>
+            <input type="submit" value="Register">
+            </td>
+	</form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>namecontroller-proj</display-name>
+  <welcome-file-list>
+    <welcome-file>FirstName.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Form</servlet-name>
+    <servlet-class>com.xworkz.sushma.FromController</servlet-class>
+    <init-param>
+      <param-name>name</param-name>
+      <param-value>5</param-value>
+    </init-param>
+    <load-on-startup>10</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Form</servlet-name>
+    <url-pattern>/First</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AppendClass</servlet-name>
+    <servlet-class>com.xworkz.sushma.AppendController</servlet-class>
+    <init-param>
+      <param-name>NAME</param-name>
+      <param-value>10</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AppendClass</servlet-name>
+    <url-pattern>/Last</url-pattern>
+  </servlet-mapping>
+</web-app>
